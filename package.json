@@ -10,12 +10,27 @@
   },
   "author": "JuanRdBO",
   "license": "MIT",
-  "files": ["src", "ios", "android", "expo-module.config.json"],
-  "keywords": ["expo", "react-native", "theme", "transition", "circular-reveal", "dark-mode"],
+  "files": [
+    "src",
+    "ios",
+    "android",
+    "expo-module.config.json"
+  ],
+  "keywords": [
+    "expo",
+    "react-native",
+    "theme",
+    "transition",
+    "circular-reveal",
+    "dark-mode"
+  ],
   "peerDependencies": {
     "expo": ">=52.0.0",
     "expo-modules-core": "*",
     "react": "*",
     "react-native": "*"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.30.0"
   }
 }
