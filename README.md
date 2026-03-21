@@ -1,6 +1,8 @@
 # expo-circular-reveal
 
 [![Validate](https://github.com/JuanRdBO/expo-circular-reveal/actions/workflows/validate.yml/badge.svg)](https://github.com/JuanRdBO/expo-circular-reveal/actions/workflows/validate.yml)
+[![npm version](https://img.shields.io/npm/v/expo-circular-reveal)](https://www.npmjs.com/package/expo-circular-reveal)
+[![npm downloads](https://img.shields.io/npm/dm/expo-circular-reveal)](https://www.npmjs.com/package/expo-circular-reveal)
 
 Telegram-style circular reveal theme transitions for React Native. Built as an Expo Module with native iOS (Swift) and Android (Kotlin) implementations.
 
