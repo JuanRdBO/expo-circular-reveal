@@ -19,7 +19,14 @@ Telegram-style circular reveal theme transitions for React Native. Built as an E
 npx expo install expo-circular-reveal
 ```
 
-> Requires a [dev client](https://docs.expo.dev/develop/development-builds/introduction/) — will not work in Expo Go.
+Then rebuild your dev client:
+
+```bash
+npx expo prebuild --clean
+npx expo run:ios   # or run:android
+```
+
+> Requires a [dev client](https://docs.expo.dev/develop/development-builds/introduction/) — will not work in Expo Go. This package includes native code (Swift + Kotlin) that must be compiled into your app binary.
 
 ## Usage
 
