@@ -54,7 +54,7 @@ jobs:
       - run: ktlint "android/**/*.kt"
 
   android-build:
-    name: Android build
+    name: Android build (example app)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -66,10 +66,14 @@ jobs:
         with:
           node-version: '20'
       - name: Install dependencies
-        run: npm install --no-save expo-modules-core
+        working-directory: example
+        run: npm install
+      - name: Prebuild Android
+        working-directory: example
+        run: npx expo prebuild --platform android
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.7'
       - name: Build
-        working-directory: android
-        run: gradle assembleDebug
+        working-directory: example/android
+        run: ./gradlew assembleDebug
