@@ -1,5 +1,7 @@
 # expo-circular-reveal
 
+[![Validate](https://github.com/JuanRdBO/expo-circular-reveal/actions/workflows/validate.yml/badge.svg)](https://github.com/JuanRdBO/expo-circular-reveal/actions/workflows/validate.yml)
+
 Telegram-style circular reveal theme transitions for React Native. Built as an Expo Module with native iOS (Swift) and Android (Kotlin) implementations.
 
 <div align="center">
