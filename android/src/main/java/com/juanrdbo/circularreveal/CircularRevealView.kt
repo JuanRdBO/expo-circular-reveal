@@ -1,4 +1,4 @@
-package expo.modules.circularreveal
+package com.juanrdbo.circularreveal
 
 import android.content.Context
 import android.graphics.Bitmap

@@ -1,7 +1,7 @@
 {
   "platforms": ["android", "ios"],
   "android": {
-    "modules": ["expo.modules.circularreveal.NativeScreenCaptureModule"]
+    "modules": ["com.juanrdbo.circularreveal.NativeScreenCaptureModule"]
   },
   "ios": {
     "modules": ["NativeScreenCaptureModule"]
