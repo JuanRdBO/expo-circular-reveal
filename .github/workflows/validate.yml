@@ -71,7 +71,7 @@ jobs:
       - name: Prebuild Android
         working-directory: example
         run: npx expo prebuild --platform android
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v5
         with:
           gradle-version: '8.7'
       - name: Build
