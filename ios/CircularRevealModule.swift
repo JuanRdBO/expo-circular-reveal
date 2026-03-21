@@ -1,11 +1,11 @@
 import ExpoModulesCore
 import UIKit
 
-public class NativeScreenCaptureModule: Module {
+public class CircularRevealModule: Module {
     private var overlayView: UIImageView?
 
     public func definition() -> ModuleDefinition {
-        Name("NativeScreenCapture")
+        Name("CircularReveal")
 
         AsyncFunction("triggerTransition") { (centerX: Double, centerY: Double, durationMs: Int, promise: Promise) in
             DispatchQueue.main.async { [weak self] in

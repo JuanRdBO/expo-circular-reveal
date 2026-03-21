@@ -16,11 +16,11 @@ import expo.modules.kotlin.modules.ModuleDefinition
 import kotlin.math.hypot
 import kotlin.math.roundToInt
 
-class NativeScreenCaptureModule : Module() {
+class CircularRevealModule : Module() {
     private var overlayView: CircularRevealView? = null
 
     override fun definition() = ModuleDefinition {
-        Name("NativeScreenCapture")
+        Name("CircularReveal")
 
         AsyncFunction("triggerTransition") { centerX: Double, centerY: Double, durationMs: Int, promise: Promise ->
             val activity = appContext.currentActivity

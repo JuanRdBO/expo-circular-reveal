@@ -1,6 +1,6 @@
 import { requireNativeModule } from "expo-modules-core";
 
-const NativeModule = requireNativeModule("NativeScreenCapture");
+const NativeModule = requireNativeModule("CircularReveal");
 
 /**
  * Captures the full window, adds a native overlay, resolves when overlay

@@ -1,9 +1,9 @@
 {
   "platforms": ["android", "ios"],
   "android": {
-    "modules": ["com.juanrdbo.circularreveal.NativeScreenCaptureModule"]
+    "modules": ["com.juanrdbo.circularreveal.CircularRevealModule"]
   },
   "ios": {
-    "modules": ["NativeScreenCaptureModule"]
+    "modules": ["CircularRevealModule"]
   }
 }
