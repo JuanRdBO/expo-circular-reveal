@@ -1,0 +1,19 @@
+included:
+  - ios
+
+excluded:
+  - ios/Pods
+
+opt_in_rules:
+  - empty_count
+  - closure_spacing
+
+disabled_rules:
+  - trailing_whitespace
+
+identifier_name:
+  min_length: 2
+
+function_body_length:
+  warning: 100
+  error: 150

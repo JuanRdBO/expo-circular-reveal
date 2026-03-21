@@ -12,7 +12,9 @@ import android.view.View
  * Draws a bitmap with a circular hole cut out of it.
  * The hole grows from (cx, cy) with the given radius.
  */
-class CircularRevealView(context: Context) : View(context) {
+class CircularRevealView(
+    context: Context,
+) : View(context) {
     var bitmap: Bitmap? = null
     var holeCenterX: Float = 0f
     var holeCenterY: Float = 0f
