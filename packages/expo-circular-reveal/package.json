@@ -1,12 +1,12 @@
 {
   "name": "expo-circular-reveal",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Telegram-style circular reveal theme transitions for React Native (Expo Module)",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JuanRdBO/expo-circular-reveal"
+    "url": "git+https://github.com/JuanRdBO/expo-circular-reveal.git"
   },
   "author": "JuanRdBO",
   "license": "MIT",
@@ -14,6 +14,7 @@
     "README.md",
     "src",
     "ios",
+    "expo-circular-reveal.podspec",
     "android/build.gradle",
     "android/src/main",
     "expo-module.config.json"

@@ -4,6 +4,7 @@
     "modules": ["com.juanrdbo.circularreveal.CircularRevealModule"]
   },
   "ios": {
-    "modules": ["CircularRevealModule"]
+    "modules": ["CircularRevealModule"],
+    "podspecPath": "expo-circular-reveal.podspec"
   }
 }
