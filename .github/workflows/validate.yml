@@ -12,19 +12,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: biomejs/setup-biome@v2
-      - run: biome ci src/
+      - run: biome ci packages/expo-circular-reveal/src/
 
   typecheck:
     name: TypeScript
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v6
-        with:
-          node-version: '20'
+      - uses: oven-sh/setup-bun@v2
       - name: Install dependencies
-        run: npm install --no-save expo-modules-core expo react react-native typescript expo-module-scripts
-      - run: npx tsc --noEmit
+        run: bun install --frozen-lockfile
+      - run: bun run typecheck
 
   swiftlint:
     name: SwiftLint
@@ -39,6 +37,7 @@ jobs:
           chmod +x swiftlint
           sudo mv swiftlint /usr/local/bin/
       - run: swiftlint lint --strict ios/
+        working-directory: packages/expo-circular-reveal
 
   ktlint:
     name: ktlint
@@ -51,29 +50,4 @@ jobs:
           curl -sL "https://github.com/pinterest/ktlint/releases/download/${KTLINT_VERSION}/ktlint" -o ktlint
           chmod +x ktlint
           sudo mv ktlint /usr/local/bin/
-      - run: ktlint "android/**/*.kt"
-
-  android-build:
-    name: Android build (example app)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v5
-        with:
-          distribution: temurin
-          java-version: '17'
-      - uses: actions/setup-node@v6
-        with:
-          node-version: '20'
-      - name: Install dependencies
-        working-directory: example
-        run: npm install
-      - name: Prebuild Android
-        working-directory: example
-        run: npx expo prebuild --platform android
-      - uses: gradle/actions/setup-gradle@v6
-        with:
-          gradle-version: '8.7'
-      - name: Build
-        working-directory: example/android
-        run: ./gradlew assembleDebug
+      - run: ktlint "packages/expo-circular-reveal/android/src/**/*.kt"

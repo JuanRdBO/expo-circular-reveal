@@ -1,8 +1,11 @@
 node_modules/
 build/
 *.tsbuildinfo
-android/build/
+packages/*/build/
+packages/*/android/build/
+.expo/
 
 # Example app generated files
+example/.expo/
 example/android/
 example/ios/

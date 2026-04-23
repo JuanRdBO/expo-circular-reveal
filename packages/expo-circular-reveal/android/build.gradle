@@ -19,7 +19,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'maven-publish'
 
 group = 'com.juanrdbo.circularreveal'
-version = '1.0.0'
+version = '0.1.1'
 
 android {
     namespace "com.juanrdbo.circularreveal"

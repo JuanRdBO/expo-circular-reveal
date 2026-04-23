@@ -39,6 +39,16 @@ npx expo run:ios   # or run:android
 
 > Requires a [dev client](https://docs.expo.dev/develop/development-builds/introduction/) — will not work in Expo Go. This package includes native code (Swift + Kotlin) that must be compiled into your app binary.
 
+## Local Example App
+
+This repo is a Bun workspace with the publishable package in `packages/expo-circular-reveal` and the Expo example app in `example/`.
+
+```bash
+bun install
+bun ios       # runs the example app
+# or bun android / bun start
+```
+
 ## Usage
 
 ```tsx

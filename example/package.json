@@ -1,19 +1,21 @@
 {
-  "name": "example",
+  "name": "expo-circular-reveal-example",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "start": "bun x expo start --dev-client --clear",
+    "build-ios-dev": "bun x expo prebuild --platform ios --clean && bun x expo run:ios",
+    "build-android-dev": "bun x expo prebuild --platform android --clean && bun x expo run:android",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "expo": "~55.0.8",
-    "expo-circular-reveal": "..",
+    "expo-circular-reveal": "*",
+    "expo-dev-client": "~55.0.28",
+    "expo-linking": "~55.0.14",
     "expo-status-bar": "~55.0.4",
     "react": "19.2.0",
-    "react-native": "0.83.2"
+    "react-native": "0.83.6"
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
